@@ -1,0 +1,46 @@
+.nav {
+    grid-area: nav;
+    width: 90%;
+    font-size: 1.5em;
+    background-color: antiquewhite;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content {
+    grid-area: content;
+    margin: 5%;
+    width: 90%;
+    font-size: 1.5em;
+    background-color: azure;
+}
+
+.sidenav {
+    grid-area: sidenav;
+    font-size: 1.5em;
+    background-color: beige;
+    padding: 10%;
+    width: 90%;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: crimson;
+    font-size: 1.5em ;
+}
+
+.grid-template-areas {
+    grid-template-areas:
+    "nav nav nav"
+    "sidenav content content"
+    "footer footer footer"
+    ;
+}
+
+.grid {
+    display: grid;
+    width: 100%;
+}

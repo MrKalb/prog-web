@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Grid Example</title>
+</head>
+<style>
+
+    .nav {
+        grid-area: nav;
+    }
+
+    .logo {
+        grid-area: logo;
+    }
+
+    .content {
+        grid-area: content;
+    }
+    
+    .sidenav {
+        grid-area: sidenav;
+    }
+    .ads {
+        grid-area: ads;
+    }
+
+    .footer {
+        grid-area: footer;
+    }
+
+    .grid-template-areas {
+        grid-template-areas:
+        "logo nav nav"
+        "sidenav content ads"
+        "footer footer footer"
+        ;
+    }
+
+    .grid {
+        display: grid;
+        width: 800px;
+    }
+
+    .item {
+        margin: 5px;
+        background: tomato;
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    .grid-columns {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .grid-rows {
+        grid-template-rows: 1fr 2fr 3fr;
+    }
+
+</style>
+<body>
+    
+    <h1>Grid columns</h1>
+    <section class="grid grid-columns">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </section>
+
+    <h1>Grid columns rows</h1>
+    <section class="grid grid-columns grid-rows">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </section>
+
+    <h1>Grid template area</h1>
+    <section class="grid grid-template-areas">
+        <div class="item logo">logo</div>
+        <div class="item nav">nav</div>
+        <div class="item sidenav">sidenav</div>
+        <div class="item content">content</div>
+        <div class="item ads">ads</div>
+        <div class="item footer">footer</div>
+    </section>
+
+
+</body>
+</html>

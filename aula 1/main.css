@@ -1,0 +1,14 @@
+table {
+    color: red;
+}
+
+body {
+    font-size: xx-large;
+    font: bolder;
+}
+
+p {
+    font-size: medium;
+    font: italic;
+    color: black;
+}
