@@ -1,0 +1,22 @@
+{
+  "id": "14121c66-557b-46ca-af60-cdb4d773c111",
+  "name" : "getInventory",
+  "priority": 1,
+  "request": {
+    "method": "GET",
+    "urlPattern": "/v1/products/1"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {"product_id":1,"stock":2,"status":"In Stock"},
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "*",
+      "Access-Control-Allow-Headers": "Accept, Content-Type, Content-Encoding, Server, Transfer-Encoding"
+    }
+  },
+  "uuid": "14121c66-557b-46ca-af60-cdb4d773c111",
+  "persistent" : true,
+  "insertionIndex" : 6
+}

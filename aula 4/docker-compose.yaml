@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  wiremock:
+    image: wiremock/wiremock:2.33.2
+    container_name: wiremock
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./wiremock/mappings:/home/wiremock/mappings
+

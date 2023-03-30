@@ -1,0 +1,19 @@
+{
+  "id": "14121c66-557b-46ca-af60-cdb4d773c112",
+  "name" : "getInventory",
+  "priority": 1,
+  "request": {
+    "method": "GET",
+    "urlPattern": "/v1/products/2"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {"product_id":2,"stock":0,"status":"Out of Stock"},
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  },
+  "uuid": "14121c66-557b-46ca-af60-cdb4d773c112",
+  "persistent" : true,
+  "insertionIndex" : 6
+}
